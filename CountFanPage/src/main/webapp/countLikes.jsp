@@ -1,25 +1,35 @@
 <html>
-<head>
-<link href="./resources/style.css" rel="stylesheet"></link>
-</head>
-<body>
-
-<b>POC for AOC</b>
-<div style="display: none">
-	<input id="idFanPageValue" type="text" value="${fanPageValues}">
-	<input id="idSecondValue" type="text" value="${frequencySecond}">
-</div>
-<div class="content">
-	<p><b>Coca Cola Fan Page</b></p>
-	<div class="facebook">facebook</div>
-	<div class="like">
-		<p id="res" class="number"></p>
-		<p>like</p>
-	</div>
-	<div style="clear: both;"></div>
-</div>
-
-</body>
+	<head>
+		<link href="./resources/style.css" rel="stylesheet"></link>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	</head>
+	<body>
+		<b>POC for AOC</b>
+		<div style="display: none">
+			<input id="idFanPageValue" type="text" value="${fanPageValues}">
+			<input id="idSecondValue" type="text" value="${frequencySecond}">
+		</div>
+		<div class="content">
+			<div class="section" >
+				<img class="img-responsive" src="img/section1.png" alt="">
+			</div>
+			<div class="section" >
+				<img class="img-responsive" src="img/section2.png" alt="">
+			</div>
+			<div class="section" >
+				<img class="img-responsive" src="img/section3.png" alt="">
+			</div>
+			<div class="section" >
+				<img class="img-responsive" src="img/section4.png" alt="">
+			</div>
+			<div class="section" >
+				<div class="likeNumber" align="center" id="res"></div>
+				<img class="img-responsive" src="img/section5.png" alt="">
+			</div>
+		</div>
+	</body>
 </html>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script>
@@ -59,5 +69,4 @@ $(function(){
         });
     },numberFrequency);
 });
-
 </script>
